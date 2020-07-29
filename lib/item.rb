@@ -4,7 +4,7 @@ class Item
 
   def initialize(info)
     @name = info[:name]
-    @price = info[:price].to_f 
+    @price = info[:price].to_f.ceil(3)
   end
 
 
