@@ -11,4 +11,10 @@ class VendorTest < Minitest::Test
     assert_instance_of Market, market
   end
 
-end 
+  def test_it_has_attributes
+    market = Market.new("South Pearl Street Farmers Market")
+
+    assert_equal "South Pearl Street Farmers Market", market.name
+  end
+
+end
