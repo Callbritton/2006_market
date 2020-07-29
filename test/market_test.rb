@@ -17,4 +17,10 @@ class VendorTest < Minitest::Test
     assert_equal "South Pearl Street Farmers Market", market.name
   end
 
+  def test_vendors_starts_empty
+    market = Market.new("South Pearl Street Farmers Market")
+
+    assert_equal [], market.vendors 
+  end
+
 end
